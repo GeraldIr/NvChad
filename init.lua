@@ -19,3 +19,14 @@ end
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"
+
+require("mason").setup()
+require("mason-lspconfig").setup()
+require("devcontainer").setup({})
+require("neotest").setup({
+  adapters = {
+    require("neotest-python")({
+      dap = {justMyCode = false},
+    }),
+  }
+})
