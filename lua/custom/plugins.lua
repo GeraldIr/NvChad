@@ -74,6 +74,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "debugpy",
+        "ruff-lsp",
       },
     },
   },
