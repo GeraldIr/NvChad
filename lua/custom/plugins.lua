@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "mbbill/undotree",
+    keys={{"<leader><F5>","<cmd>:UndotreeToggle<cr>"}}
+  },
+  {
     "linux-cultist/venv-selector.nvim",
     dependencies = {
       "neovim/nvim-lspconfig",
